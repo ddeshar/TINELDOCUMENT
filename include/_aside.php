@@ -1,7 +1,7 @@
 <div class="main-header">
     <div class="logo-header" data-background-color="light-blue2">
-        <a href="index.html" class="logo">
-            <img src="assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
+        <a href="?page=docs" class="logo">
+            <img src="assets/img/logo.png" alt="navbar brand" class="navbar-brand" height="70%">
         </a>
         <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
@@ -27,29 +27,25 @@
     <div class="sidebar-background"></div>
     <div class="sidebar-wrapper scrollbar scrollbar-inner">
         <div class="sidebar-content">
-            <ul class="nav nav-info">
-                <li class="nav-section">
-                    <span class="sidebar-mini-icon">
-                        <i class="fa fa-ellipsis-h"></i>
-                    </span>
-                    <h4 class="text-section">USER'S</h4>
-                </li>
 
-                <li class="nav-item active">
-                    <a href="index.php">
-                        <i class="fas fa-home"></i>
-                        <p>Introduction</p>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="index.php">
-                        <i class="fas fa-home"></i>
-                        <p>Introduction</p>
-                    </a>
-                </li>
-
-            </ul>
+            <?php 
+                $categories = categories();
+                foreach($categories as $category){ ?>
+                <ul class="nav nav-info">
+                        <li class="nav-section">
+                            <span class="sidebar-mini-icon">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </span>
+                            <h4 class="text-section"><?=$category['category_name']?></h4>
+                        </li>
+                    <?php 
+                        if( ! empty($category['subcategory'])){
+                            echo viewsubcat($category['subcategory']);
+                        } 
+                    ?>
+                </ul>
+            <?php } ?>
+            
         </div>
     </div>
 </div>
