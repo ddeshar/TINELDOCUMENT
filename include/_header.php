@@ -11,7 +11,7 @@
     <script>
         WebFont.load({
             google: {
-                "families": ["Lato:300,400,700,900"]
+                "families": ["Niramit:300,400,700,900"]
             },
             custom: {
                 "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"],
@@ -24,8 +24,15 @@
     </script>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/atlantis.min.css">
-    <link href="assets/styles.css" rel="stylesheet" />
-    <link href="assets/prism.css" rel="stylesheet" />
+    <!-- <link href="assets/styles.css" rel="stylesheet" />
+    <link href="assets/prism.css" rel="stylesheet" /> -->
+    
+    <style>
+      body, p,a, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,option{
+        font-family:'Niramit' !important;
+      }
+    </style>
+
 </head>
 
 <body>
