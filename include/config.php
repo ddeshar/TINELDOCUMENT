@@ -2,11 +2,7 @@
     session_start();
 
     function dbconnect(){
-        $host = "localhost"; /* Host name */
-        $user = "root"; /* User */
-        $password = "mysql"; /* Password */
-        $dbname = "php_manual_tinel"; /* Database name */
-
+        include('db_config.php');
         $con = new mysqli($host, $user, $password,$dbname);
         mysqli_set_charset($con, 'utf8');
 

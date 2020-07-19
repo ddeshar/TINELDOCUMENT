@@ -11,3 +11,4 @@
 
     define("_introduction", "User Manual This Is Not E-Learning (TINEL)");
     define("_slogan", "Tell me and I forget. Teach me and I remember. Involve me and I learn.");
+    define("_TINELMANUAL", "TINEL MANUAL");

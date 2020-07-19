@@ -11,3 +11,4 @@
 
     define("_introduction", "คู่มือการใช้ ของระบบ This Is Not E-Learning (TINEL)");
     define("_slogan", "บอกฉัน แล้วฉันจะลืม สอนฉัน แล้วฉันจะจำ แต่ถ้าให้ฉันได้ทำ แล้วฉันจะเรียนรู้!");
+    define("_TINELMANUAL", "คู่มือการใช้ This Is Not E-Learning (TINEL)");

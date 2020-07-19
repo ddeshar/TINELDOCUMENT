@@ -1,4 +1,1 @@
-<h1>Hello world</h1>
-
-
-background: #ff7600!important;
+<h1><?=_TINELMANUAL?></h1>
