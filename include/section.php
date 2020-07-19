@@ -20,7 +20,7 @@
         echo '
             <div class="row">
                 <div class="col-sm">
-                    <img src="' . $image . '" alt="'. $title .'" width="100%">
+                    <img src="_backend/assets/images/manual/' . $image . '" alt="'. $title .'" width="100%">
                 </div>
                 <div class="col-sm">
                     <h1>'. $title .'</h1>
