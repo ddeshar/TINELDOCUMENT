@@ -1,5 +1,5 @@
 <?php
-    if($_GET['page'] && $_GET['section']){
+    if(isset($_GET['page']) && isset($_GET['section'])){
         echo '	<div class="page-inner">
                     <div class="page-header">
                         <ul class="breadcrumbs">
