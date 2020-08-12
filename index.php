@@ -1,5 +1,5 @@
 <?php
-    session_start();
+error_reporting(0);
     require_once './include/config.php';
     require_once './include/function.php';
     require_once './include/lang.php';
@@ -17,7 +17,7 @@
             <div class="card card-documentation">
                 <div class="card-body">
                     <?php
-                        if($_GET['page'] && $_GET['section']){
+                        if(isset($_GET['page']) && isset($_GET['section'])){
                             include "./include/section.php";
                         }else{
                             include "./include/front.php";
